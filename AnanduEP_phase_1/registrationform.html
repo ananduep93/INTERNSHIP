@@ -10,28 +10,28 @@
     <hr>
     <h1>Registration Form </h1>
     <form>
-        <label>Full Name:</label>
+        <label>Full Name: <span class="required">*</span></label>
         <br>
-        <input type="text" name="username" required>
-        <br>
-        <br>
-        <label>Age:</label>
-        <br>
-        <input type="number" name="age" required>
+        <input type="text" name="username" required placeholder="Enter your full name" minlength="3" maxlength="10" pattern="[a-zA-Z\s]+" >
         <br>
         <br>
-        <label>Email:</label>
+        <label>Age: <span class="required">*</span></label>
         <br>
-        <input type="email" name="email" required>
+        <input type="number" name="age" required placeholder="age" min="0" max="100">
         <br>
         <br>
-        <label>Password:</label>
+        <label>Email: <span class="required">*</span></label>
         <br>
-        <input type="password" name="password" required>
+        <input type="email" name="email" required placeholder="Enter your email">
+        <br>
+        <br>
+        <label>Password: <span class="required">*</span></label>
+        <br>
+        <input type="password" name="password" required placeholder="Enter your password" minlength="4" maxlength="6">
         <br>
         <br>
         
-        <label>Gender:</label>
+        <label>Gender: <span class="required">*</span></label>
         <br>
         <br>
         <input type="radio" name="gender" value="male" required>
@@ -40,7 +40,7 @@
         <label>Female </label>
         <br>
         <br>
-        <label>Select Hobbies</label>
+        <label>Select Hobbies <span class="required">*</span></label>
         <br>
         <br>
         <input type="checkbox">

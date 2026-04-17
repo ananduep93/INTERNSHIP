@@ -10,14 +10,14 @@
     <hr>
     <h1>Login</h1>
     <form>
-        <label>User Name:</label>
+        <label>User Name: <span class="required">*</span></label>
         <br>
-        <input type="text" name="username" required>
+        <input type="text" name="username" required placeholder="Enter your username" minlength="3" maxlength="10" pattern="[a-zA-Z\s]+">
         <br>
         <br>
-        <label>Password:</label>
+        <label>Password: <span class="required">*</span></label>
         <br>
-        <input type="password" name="password" required>
+        <input type="password" name="password" required placeholder="Enter your password" minlength="4" maxlength="6">
         <br>
         <br>
         <input type="submit" value="login">
