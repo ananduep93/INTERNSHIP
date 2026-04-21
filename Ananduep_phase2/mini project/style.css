@@ -1,0 +1,228 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+    }
+  
+
+.navbar{
+        background-color: rgb(128, 240, 216);
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.logo{
+        font-size: 25px;
+        font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
+        padding: 30px;
+    }
+
+.links a{
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+.herosession {
+      background-color: tomato;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+.herosession h2{font-size: 38px; margin-bottom: 12px;}
+.herosession p{font-size: 18px;margin-bottom: 24px;}
+
+.herosession a {
+      background-color: orange;
+      color: white;
+      padding-top: 20px;
+      padding: 12px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+.cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+.card {
+      background-color: white;
+      border: 2px solid tomato;
+      padding: 24px;
+      width: 220px;
+      text-align: center;
+    }
+
+.card h3{color: tomato;}
+
+
+.price{
+    color: green;
+
+}
+
+footer {
+      background-color: rgb(249, 196, 255);
+      color: white;
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+      margin-top: 30px;
+
+    }
+
+    
+    @media (min-width: 1024px) {
+    }
+
+
+    @media (min-width: 601px) and (max-width: 1023px) {
+
+    }
+
+    @media (max-width: 600px) {
+
+    }
+
+
+
+    
+/*about*/
+
+.page-header {
+      background-color: tomato;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+
+.page-header h1 { font-size: 32px; }
+.page-header p  { font-size: 16px; margin-top: 8px; }
+
+.about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding: 40px 24px;
+      justify-content: center;
+    }
+
+.about-box {
+      background-color: white;
+      border: 2px solid tomato;
+      padding: 24px;
+      flex: 1;
+      min-width: 260px;
+      max-width: 460px;
+    }
+
+.about-box h2 { color: darkred; margin-bottom: 12px; }
+.about-box p  { font-size: 15px; color: #444; line-height: 1.8; }
+
+.section-title {
+      text-align: center;
+      font-size: 24px;
+      color: darkred;
+      padding: 20px 20px 0;
+    }
+
+.team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+
+.team-card {
+      background-color: white;
+      border: 2px solid tomato;
+      padding: 20px;
+      width: 190px;
+      text-align: center;
+
+    }
+
+.team-card h4 { color: darkred; margin-bottom: 4px; }
+.team-card p  { font-size: 13px; color: gray; }
+
+
+
+
+
+/*contact*/
+
+.contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding: 40px 24px;
+      justify-content: center;
+    }
+
+
+.order-form {
+      background-color: white;
+      border: 2px solid tomato;
+      padding: 28px;
+      min-width: 280px;
+      max-width: 460px;
+    }
+
+.order-form h2 {
+      color: darkred;
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+
+.form-group {
+      margin-bottom: 30px;
+    }
+
+.form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #333;
+      font-size: 20px;
+    }
+
+.info-box {
+      background-color: white;
+      border: 2px solid tomato;
+      padding: 28px;
+      min-width: 240px;
+      max-width: 260px;
+    }
+
+.info-box h2 {
+      color: darkred;
+      font-size: 20px;
+    }
+
+.info-item {
+      display: flex;
+    }
+
+.submit-btn {
+      background-color: darkred;
+      color: white;
+      padding: 12px 28px;
+      border: none;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+.submit-btn:hover { background-color: tomato; }

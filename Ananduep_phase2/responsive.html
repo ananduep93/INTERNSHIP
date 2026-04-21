@@ -70,45 +70,16 @@
     }
     
     @media (min-width: 1024px) {
-
-      .screen-label {
-        background-color: #d4edda;
-        color: darkgreen;
-      }
-
-      .screen-label::before {
-        content:  "🖥️ DESKTOP VIEW (above 1024px)";
-      }
-
     }
+
 
     @media (min-width: 601px) and (max-width: 1023px) {
 
-      .screen-label {
-        background-color: #fff3cd;
-        color: darkorange;
-      }
-
-      .screen-label::before {
-        content: "📱 TABLET VIEW (601px to 1023px)";
-      }
-
     }
-
 
     @media (max-width: 600px) {
 
-      .screen-label {
-        background-color: #f8d7da;
-        color: darkred;
-      }
-
-      .screen-label::before {
-        content: "📲 MOBILE VIEW (600px and below)";
-      }
     }
-
-
 </style>
 <body>
     <div class="screen-label"></div>

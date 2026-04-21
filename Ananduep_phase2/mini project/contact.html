@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar">
+    <a class="logo">Tasty Bite</a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Order & Contact </h1>
+    <p>Place your order or send us a message!</p>
+  </div>
+
+
+  <div class="contact-section">
+
+    <div class="order-form">
+      <h2>🛒 Place Your Order</h2>
+
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+      </div>
+
+      <div class="form-group">
+        <label for="item">Select Item</label>
+        <select id="item">
+          <option value="">-- Choose your food --</option>
+          <option value="pizza">🍕 Cheese Pizza — ₹199</option>
+          <option value="burger">🍔 Veg Burger — ₹129</option>
+          <option value="noodles">🍜 Noodles — ₹149</option>
+          <option value="cake">🍰 Chocolate Cake — ₹99</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Delivery Address</label>
+        <textarea id="address" placeholder="Enter your full address..."></textarea>
+      </div>
+
+      <button class="submit-btn" onclick="alert('Order placed! 🍕 Delivery in 30 minutes!')">
+        Place Order
+      </button>
+    </div>
+
+    <div class="info-box">
+      <h2>Contact Info</h2>
+
+      <div class="info-item">
+        <div class="text">
+          <h4>Phone</h4>
+          <p>+91 98765 43210</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="text">
+          <h4>Email</h4>
+          <p>order@tastybite.com</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="text">
+          <h4>Location</h4>
+          <p>Kerala, India</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="text">
+          <h4>Open Hours</h4>
+          <p>Every day<br>9am – 10pm</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+   <footer>
+        <b>©️ All right Reserved</b>
+    </footer>
+
+
+</body>
+</html>
