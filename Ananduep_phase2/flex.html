@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Sample</title>
+  <style>
+    body {
+      background-color: lightyellow;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 { color: darkblue; text-align: center; }
+    h3 { color: darkred; margin-top: 35px; }
+
+
+    .box {
+      background-color: steelblue;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 15px 20px;
+      margin: 5px;
+    }
+
+
+    .flex-container {
+      background-color: #dce8f5;
+      border: 2px ;
+      padding: 10px;
+    }
+
+
+    .direction-row {
+      display: flex;
+      flex-direction: row;       
+    }
+
+    .direction-column {
+      display: flex;
+      flex-direction: column;    
+    }
+
+
+
+    .justify-start {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .justify-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .justify-end {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .justify-between {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .justify-around {
+      display: flex;
+      justify-content: space-around;
+    }
+
+
+
+    .align-start {
+      display: flex;
+      align-items: flex-start;
+      height: 100px;
+      background-color: #dce8f5;
+      border: 2px ;
+      padding: 5px;
+    }
+
+    .align-center {
+      display: flex;
+      align-items: center;
+      height: 100px;
+      background-color: #dce8f5;
+      border: 2px ;
+      padding: 5px;
+      margin-top: 8px;
+    }
+
+    .align-end {
+      display: flex;
+      align-items: flex-end;
+      height: 100px;
+      background-color: #dce8f5;
+      border: 2px ;
+      padding: 5px;
+      margin-top: 8px;
+    }
+
+  
+    .box-small { padding: 8px 20px; }
+    .box-medium { padding: 20px; }
+    .box-large { padding: 30px 20px; }
+
+
+    .cards-flex {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      margin-top: 10px;
+      gap: 10px;
+    }
+
+    .card {
+      background-color: white;
+      border: 2px solid steelblue;
+      padding: 20px;
+      flex: 1;
+      text-align: center;
+    }
+
+    .card h4 { color: darkblue; margin-bottom: 8px; }
+    .card p  { font-size: 13px; color: gray; }
+
+  </style>
+</head>
+<body>
+
+  <h2>Flex Sample </h2>
+  <p style="text-align:center;">
+
+
+  <h3>1. flex-direction</h3>
+
+  <p><b>flex-direction: row</b> (default — left to right)</p>
+  <div class="flex-container direction-row">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <p style="margin-top:15px;"><b>flex-direction: column</b> (top to bottom)</p>
+  <div class="flex-container direction-column" style="width:200px;">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  
+  
+  <h3>2. justify-content (horizontal alignment)</h3>
+
+  <p><b>flex-start</b></p>
+  <div class="flex-container justify-start">
+    <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+  </div>
+
+  <p style="margin-top:10px;"><b>center</b></p>
+  <div class="flex-container justify-center">
+    <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+  </div>
+
+  <p style="margin-top:10px;"><b>flex-end</b></p>
+  <div class="flex-container justify-end">
+    <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+  </div>
+
+  <p style="margin-top:10px;"><b>space-between</b></p>
+  <div class="flex-container justify-between">
+    <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+  </div>
+
+  <p style="margin-top:10px;"><b>space-around</b></p>
+  <div class="flex-container justify-around">
+    <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+  </div>
+
+
+  <h3>3. align-items (vertical alignment)</h3>
+
+  <p><b>align-items: flex-start</b> (top)</p>
+  <div class="align-start">
+    <div class="box box-small">A</div>
+    <div class="box box-medium">B</div>
+    <div class="box box-large">C</div>
+  </div>
+
+  <p style="margin-top:10px;"><b>align-items: center</b> (middle)</p>
+  <div class="align-center">
+    <div class="box box-small">A</div>
+    <div class="box box-medium">B</div>
+    <div class="box box-large">C</div>
+  </div>
+
+  <p style="margin-top:10px;"><b>align-items: flex-end</b> (bottom)</p>
+  <div class="align-end">
+    <div class="box box-small">A</div>
+    <div class="box box-medium">B</div>
+    <div class="box box-large">C</div>
+  </div>
+
+
+</body>
+</html>
