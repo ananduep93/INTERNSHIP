@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even or odd </title>
+</head>
+<body>
+    <h1>Check Even Or Odd </h1> 
+    <input type="number" required placeholder="Enter a Number " id="inp">
+    <br>
+    <button type="button" onclick="display()">Click to enter</button>
+    <h1 id="output"></h1>
+<script>
+    function display(){
+        var num=Number(document.getElementById("inp").value)
+
+        if(num%2==0){
+            document.getElementById("output").innerHTML="Entered number is even"
+        }else{
+            document.getElementById("output").innerHTML="Entered number is odd"
+        }
+    }
+</script>
+<style>
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    width: 170px;
+      background-color: aqua;
+      border: 2px solid black;
+      color: rgb(67, 49, 49);
+      padding: 12px 28px;
+      border: none;
+      font-size: 15px;
+}
+
+input{
+    width: 170px;
+    display: flex;
+    height: 40px;
+}
+</style>
+</body>
+</html>
