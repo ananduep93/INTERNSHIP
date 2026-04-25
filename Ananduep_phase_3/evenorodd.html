@@ -6,11 +6,13 @@
     <title>even or odd </title>
 </head>
 <body>
+   <div class="container">
     <h1>Check Even Or Odd </h1> 
     <input type="number" required placeholder="Enter a Number " id="inp">
     <br>
     <button type="button" onclick="display()">Click to enter</button>
     <h1 id="output"></h1>
+   </div>
 <script>
     function display(){
         var num=Number(document.getElementById("inp").value)
@@ -23,24 +25,47 @@
     }
 </script>
 <style>
+
+body{
+    margin-top: 90px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    background-color: aliceblue;
+}
 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'poppins',sans-serif;
 }
 
 button{
     width: 170px;
       background-color: aqua;
       border: 2px solid black;
-      color: rgb(67, 49, 49);
       padding: 12px 28px;
       border: none;
       font-size: 15px;
+      border-radius: 20px;
+      color: blue;
 }
 
 input{
     width: 170px;
     display: flex;
     height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 12px;
+    margin-left: 100px;
 }
 </style>
 </body>
