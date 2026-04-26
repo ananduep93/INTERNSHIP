@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Change text Sample</h1>
+    <div class="title">
+        <h1 id="title">Phase 2</h1>
+        <button onclick="changeText()">Click Here To Change Phase</button>
+    </div>
+
+    <br><br>
+    <h1 class="heading">Change Style Sample</h1>
+    <div class="title">
+        <p id="paragraph">Style Sample</p>
+        <button onclick="changeStyle()">Click Here To Change Style </button>
+    </div>
+
+    <br><br>
+    <h1 class="heading">Add and Remove Item Sample</h1>
+    <div class="title">
+    <ul id="myList">
+    <li>Item 1</li>
+    </ul>
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Item</button>
+    </div>
+
+
+<script>
+  function changeText() {
+      let title = document.getElementById("title");
+      title.textContent = "Phase 3";
+  }
+  function changeStyle() {
+      let para = document.getElementById("paragraph");
+      para.style.color = "red";
+      para.style.fontSize = "24px";
+      para.style.backgroundColor = "yellow";
+  }
+
+  function addItem() {
+      let list = document.getElementById("myList");
+      let newItem = document.createElement("li"); 
+      newItem.textContent = "New Item";
+      list.appendChild(newItem); 
+  }
+
+  function removeItem() {
+      let list = document.getElementById("myList");
+      if (list.lastChild) {
+          list.removeChild(list.lastChild); 
+      }
+    }
+
+
+</script>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .title{
+        width: 250px;
+        color: blue;
+        border: 2px solid black;
+        margin-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    
+</style>
+</body>
+</html>
