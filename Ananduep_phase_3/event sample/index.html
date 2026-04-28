@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event sample</title>
+</head>
+<body>
+
+<h2> Event Handling </h2>
+
+<div class="title">
+    <h3> Button Click - Change Text</h3>
+
+    <button id="myBtn">Click Me</button>
+    <p id="clickText">Click the button to change this text.</p>
+</div>
+
+<div class="title">
+    <h3> Input Typing - Live Preview</h3>
+
+    <input type="text" id="liveInput" placeholder="Type something...">
+    <p><span id="preview">type something</span></p>
+</div>
+
+<div class="title">
+    <h3>Form Submit - Prevent Default and Validate</h3>
+    <form id="myForm">
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+    <p id="formMsg"></p>
+</div>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    width: 250px;
+    color: blue;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+</style>
+
+<script src="script.js"></script>
+
+</body>
+</html>

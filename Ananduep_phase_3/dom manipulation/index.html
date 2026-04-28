@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation</title>
+</head>
+<body>
+
+<h1>DOM Manipulation</h1>
+
+<hr>
+<div class="title">
+    <h2>Dynamic List</h2>
+    <input type="text" id="listInput" placeholder="Enter item">
+    <button onclick="addItem()">Add</button>
+    <button onclick="clearList()">Clear All</button>
+    <ul id="myList"></ul>
+</div>
+
+<div class="title">
+    <h2>To-Do List</h2>
+
+    <input type="text" id="todoInput" placeholder="Enter task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="todoList"></ul>
+</div>
+
+
+<div class="title">
+    <h2>Toggle Button</h2>
+    <button onclick="toggleMessage()">Show / Hide Message</button>
+    <p id="toggleMsg" style="display:none;">Hello! This is the hidden message.</p>
+
+</div>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    width: 250px;
+    color: blue;
+     border: 2px solid black;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+</style>
+  
+<script src="script.js"></script>
+
+</body>
+</html>
